@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:pharma_quick/views/bottom_navigation.dart';
+
+import 'package:pharma_quick/views/splash_view.dart';
 
 void main() {
   runApp(const PharmaQuick());
@@ -16,9 +17,9 @@ class PharmaQuick extends StatelessWidget {
       minTextAdapt: true,
       splitScreenMode: true,
       builder: ((context, child) {
-        return MaterialApp(
+        return const MaterialApp(
           debugShowCheckedModeBanner: false,
-          home: NormalBottom(),
+          home: SplashView(),
         );
       }),
     );

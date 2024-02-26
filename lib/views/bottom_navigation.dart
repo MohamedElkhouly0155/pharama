@@ -4,7 +4,7 @@ import 'package:pharma_quick/views/home_view.dart';
 import 'package:pharma_quick/views/search_view.dart';
 
 class NormalBottom extends StatefulWidget {
-  NormalBottom({super.key});
+  const NormalBottom({super.key});
 
   @override
   State<NormalBottom> createState() => _NormalBottomState();
