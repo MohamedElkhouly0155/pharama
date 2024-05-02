@@ -108,23 +108,16 @@ class AddButtonScreen extends StatelessWidget {
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(5),
                     border: Border.all(color: Colors.grey)),
-                child: const Row(
-                  children: [
-                    Padding(
-                      padding: EdgeInsets.only(left: 10),
-                      child: Text(
-                        'Contraindications for use',
-                        style: TextStyle(fontSize: 18),
-                      ),
-                    ),
-                    Padding(
-                      padding: EdgeInsets.only(left: 105),
-                      child: Icon(
-                        Icons.keyboard_arrow_right_sharp,
-                        size: 30,
-                      ),
-                    )
-                  ],
+                child: const ListTile(
+                  trailing: Icon(
+                    Icons.keyboard_arrow_right_sharp,
+                    size: 30,
+                    color: Colors.black,
+                  ),
+                  title: Text(
+                    'Contraindications for use',
+                    style: TextStyle(fontSize: 18),
+                  ),
                 ),
               ),
             ),
@@ -138,23 +131,16 @@ class AddButtonScreen extends StatelessWidget {
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(5),
                     border: Border.all(color: Colors.grey)),
-                child: const Row(
-                  children: [
-                    Padding(
-                      padding: EdgeInsets.only(left: 10),
-                      child: Text(
-                        'Side effects',
-                        style: TextStyle(fontSize: 18),
-                      ),
-                    ),
-                    Padding(
-                      padding: EdgeInsets.only(left: 210),
-                      child: Icon(
-                        Icons.keyboard_arrow_right_sharp,
-                        size: 30,
-                      ),
-                    )
-                  ],
+                child: const ListTile(
+                  trailing: Icon(
+                    Icons.keyboard_arrow_right_sharp,
+                    size: 30,
+                    color: Colors.black,
+                  ),
+                  title: Text(
+                    'Side effects',
+                    style: TextStyle(fontSize: 18),
+                  ),
                 ),
               ),
             ),
@@ -168,23 +154,16 @@ class AddButtonScreen extends StatelessWidget {
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(5),
                     border: Border.all(color: Colors.grey)),
-                child: const Row(
-                  children: [
-                    Padding(
-                      padding: EdgeInsets.only(left: 10),
-                      child: Text(
-                        'Medication alternatives',
-                        style: TextStyle(fontSize: 18),
-                      ),
-                    ),
-                    Padding(
-                      padding: EdgeInsets.only(left: 115),
-                      child: Icon(
-                        Icons.keyboard_arrow_right_sharp,
-                        size: 30,
-                      ),
-                    )
-                  ],
+                child: const ListTile(
+                  trailing: Icon(
+                    Icons.keyboard_arrow_right_sharp,
+                    size: 30,
+                    color: Colors.black,
+                  ),
+                  title: Text(
+                    'Medication alternation',
+                    style: TextStyle(fontSize: 18),
+                  ),
                 ),
               ),
             ),
@@ -198,23 +177,16 @@ class AddButtonScreen extends StatelessWidget {
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(5),
                     border: Border.all(color: Colors.grey)),
-                child: const Row(
-                  children: [
-                    Padding(
-                      padding: EdgeInsets.only(left: 10),
-                      child: Text(
-                        'Active ingredients',
-                        style: TextStyle(fontSize: 18),
-                      ),
-                    ),
-                    Padding(
-                      padding: EdgeInsets.only(left: 160),
-                      child: Icon(
-                        Icons.keyboard_arrow_right_sharp,
-                        size: 30,
-                      ),
-                    )
-                  ],
+                child: const ListTile(
+                  trailing: Icon(
+                    Icons.keyboard_arrow_right_sharp,
+                    size: 30,
+                    color: Colors.black,
+                  ),
+                  title: Text(
+                    'Active ingredients',
+                    style: TextStyle(fontSize: 18),
+                  ),
                 ),
               ),
             ),

@@ -22,12 +22,13 @@ class _OnBordingViewState extends State<OnBordingView> {
     _pageController = PageController(initialPage: 0);
     super.initState();
   }
-
+/*
   @override
   void dispose() {
     _pageController.dispose();
     super.dispose();
   }
+  */
 
   @override
   Widget build(BuildContext context) {
@@ -62,13 +63,19 @@ class _OnBordingViewState extends State<OnBordingView> {
         elevation: 0.0,
         systemOverlayStyle:
             const SystemUiOverlayStyle(statusBarColor: Colors.transparent),
-        leading: IconButton(
-          onPressed: () {},
-          icon: const Icon(
-            Icons.arrow_back_ios_new,
-            color: Color(0xFF7D7B7B),
-          ),
-        ),
+        leading: _pageIndex == 0
+            ? SizedBox()
+            : IconButton(
+                onPressed: () {
+                  setState(() {
+                    _pageIndex = _pageIndex - 1;
+                  });
+                },
+                icon: const Icon(
+                  Icons.arrow_back_ios_new,
+                  color: Color(0xFF7D7B7B),
+                ),
+              ),
       ),
       body: Column(
         children: [

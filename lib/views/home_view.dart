@@ -16,6 +16,7 @@ class HomeView extends StatelessWidget {
         foregroundColor: Colors.black,
       ),
       body: SingleChildScrollView(
+        scrollDirection: Axis.vertical,
         child: Padding(
           padding: const EdgeInsets.only(top: 0),
           child: Column(mainAxisSize: MainAxisSize.min, children: [
